@@ -1,0 +1,58 @@
+#title {
+    text-align: center;
+    background-color: black;
+    color:white;
+    padding: 30px;
+    margin:0;
+}
+
+#buttonLayout {
+    display:flex;
+    background-color: rgb(161, 144, 104);
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+}
+
+#buttonLayout a {
+    color:black;
+    text-align: center;
+}
+
+#selfImages {
+    display:flex;
+    background-color: rgb(42, 42, 154);
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:100px;
+    gap: 100px;
+}
+
+#selfImages img {
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-style: solid;
+    border-color: black;
+}
+
+#selfImages p {
+    color:white;
+    text-align: center;
+}
+
+#bottomText {
+    display:flex;
+    background-color: rgb(42, 42, 154);
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color:white;
+    text-align: center;
+}
+#footer {
+    background-color: black;
+    color: white;
+}
