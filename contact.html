@@ -3,41 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 1</title>
+    <title>Contact</title>
+    <link href="style.css" rel = "stylesheet">
 </head>
 <body>
     <header>
-        <h1>Contact</h1>
+        <h1 id="title">Contact</h1>
     </header>
-    
-    <hr>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <header>
-        <b>Contact Information</b>
-    </header>
-    <section>
-        <ul>
-            <li>Maeva Akpaca</li>
-            <li>makpaca@csumb.edu</li>
-            <br>
-            <li>Brandon Calvario</li>
-            <li>bcalvario@csumb.edu</li>
-            <br>
-            <li>Matthew Barrett</li>
-            <li>mabarrett@csumb.edu</li>
-        </ul>
-    </section>
-    <hr>
+    <div id="buttonLayout">
+        <a class="button"href="index.html">Home</a>
+        <a class="button"href="about.html">About</a>
+        <a id="selectedButton"href="contact.html">Contact</a>
+    </div>
+    <div id="middlePortion">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSexWfhnLOsI4ZqfstFNJXBce_YFKrpVA_i-xZt0h93UCFUG4w/viewform?embedded=true" width="640" height="553" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
     <footer>
-        <p>
-            CST336 Internet Programming. 2026 Barrett and so on
-            Disclaimer: This information in this webpage is fictitious.
-            It is used for academic purposes only. 
-            <br>
-            <img src="img/temp3.jpg" alt="logo"> 
-        </p>
+        <div id="footer">
+            <img src="img/csumb.png" alt="logo">
+            <p id="evilParagraphThatCausesMeIssues">
+                CST336 Internet Programming. 2026 Barrett and so on
+                Disclaimer: This information in this webpage is fictitious.
+                It is used for academic purposes only. 
+                <br>
+            </p>
+        </div>
     </footer>
     
     

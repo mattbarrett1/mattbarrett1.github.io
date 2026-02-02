@@ -1,9 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
 #title {
     text-align: center;
     background-color: black;
     color:white;
     padding: 30px;
     margin:0;
+    box-sizing: border-box;
 }
 
 #buttonLayout {
@@ -20,7 +25,7 @@
     text-align: center;
 }
 
-#selfImages {
+#middlePortion {
     display:flex;
     background-color: rgb(42, 42, 154);
     justify-content: center;
@@ -29,7 +34,7 @@
     gap: 100px;
 }
 
-#selfImages img {
+#middlePortion img {
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
     border-top-left-radius: 20%;
@@ -38,7 +43,12 @@
     border-color: black;
 }
 
-#selfImages p {
+#middlePortion p {
+    color:white;
+    text-align: center;
+}
+
+#middlePortion b {
     color:white;
     text-align: center;
 }
@@ -53,6 +63,47 @@
     text-align: center;
 }
 #footer {
-    background-color: black;
-    color: white;
+    background-color: rgba(27, 27, 27);
+    color: rgb(144, 144, 144);
+    justify-content: center;
+    text-align: center;
+}
+#evilParagraphThatCausesMeIssues{
+    margin:0;
+}
+
+#selectedButton {
+    border-style: outset;
+    border-width: 5px;
+    color:white;
+}
+
+.button {
+    border-style: groove;
+    border-width: 5px;
+}
+
+#tableSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color:white;
+    background-color: rgb(42, 42, 154);
+    padding:100px;
+    gap: 100px;
+}
+
+#aboutTable,th,td {
+    padding: 10px;
+    gap:10px;
+    border: 3px;
+    border-style: ridge;
+    border-color: rgb(114, 118, 124);
+}
+#tableTop {
+    background-color: rgb(255, 255, 227);  
+    color:black;
 }

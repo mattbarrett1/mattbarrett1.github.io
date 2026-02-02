@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link href="style.css" rel = "stylesheet">
 </head>
 <body>
     <header>
-        <h1>About</h1>
+        <h1 id="title">Team Showcase</h1>
     </header>
-    
-    <hr>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <section>
-        <table>
-            <tr>
+    <div id = "buttonLayout">
+        <a class="button" href="index.html">Home</a>
+        <a id="selectedButton" href="about.html">About</a>
+        <a class="button" href="contact.html">Contact</a>
+    </div>
+    <section id = "tableSection">
+        <table id = "aboutTable">
+            <tr id = "tableTop">
                 <th>
                     <b>Programming Language</b>
                 </th>
@@ -67,15 +68,16 @@
             </ul>
         </div>
     </section>
-    <hr>
     <footer>
-        <p>
-            CST336 Internet Programming. 2026 Barrett and so on
-            Disclaimer: This information in this webpage is fictitious.
-            It is used for academic purposes only.  
-            <br>
-            <img src="img/temp3.jpg" alt="logo">
-        </p>
+        <div id="footer">
+            <img src="img/csumb.png" alt="logo">
+            <p id="evilParagraphThatCausesMeIssues">
+                CST336 Internet Programming. 2026 Barrett and so on
+                Disclaimer: This information in this webpage is fictitious.
+                It is used for academic purposes only. 
+                <br>
+            </p>
+        </div>
     </footer>
     
     
