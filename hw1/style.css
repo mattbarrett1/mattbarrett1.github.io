@@ -2,6 +2,16 @@ body {
     margin: 0;
     padding: 0;
     background-color:rgba(27, 27, 27);
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    /*
+    Font from google, copied and pasted what they told me to
+    I used the "JetBrains Mono" font
+    looks cool
+    https://fonts.google.com/selection/embed
+    */
 }
 
 .topText {
