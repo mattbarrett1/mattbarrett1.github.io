@@ -10,66 +10,56 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section>
-        <div id="top">
-            <p class = "topText">ILOVEYOU</p>
-            <p class = "topText">Type: Worm</p>
-        </div>
-    </section>
-    <section>
-        <div id="navigation">
-            <div><a class="nonSelectedButton" href="index.html">Home</a></div>
-            <div><a id="selectedButton" href="iloveyou.html">ILOVEYOU</a></div>   
-            <div><a class="nonSelectedButton" href="wannacry.html">WannaCry</a></div>
-            <div><a class="nonSelectedButton" href="resonate.html">Resonate</a></div>
-        </div>
-    </section>
-    <section>
-        <div id="body">
-            <p>
-                Written by Onel de Guzman, the ILOVEYOU computer worm was estimated to have infected 50 million computers.<br>
-                The worm was written to steal passwords, and the author never intended it to spread as far as it did.<br>
-                <br>
-                A worm is unique as it does not require a host program to infect. Most viruses infect host programs which will<br>
-                inadvertently run the viruses, but worms run by themselves. This causes them to be hard to catch and easy to spread,<br>
-                usually abusing vulnerabilites in the security of certian applications, like Emails.<br>
-                <br>ILOVEYOU abused a certian oversight in emails. A victim would recive an email from someone they knew (likely<br>
-                a friend or collegue) with the phrase "kindly check the attached LOVELETTER  coming from me."<br>
-            </p>
-            <img src="img/ILOVEYOU.png" alt="ILOVEYOU">
-            <cite><a class="source" href="https://www.youtube.com/watch?v=ZqkFfF5kAvw">Source</a></cite>
-            <p>
-                By default, many email programs hid the filetype of attached files. In the screenshot, you can see that the attached<br>
-                file pretends to be a text file, but if you enable file types, you'll see it's actually a VBS script.<br>
-                When the file was downloaded, the worm would immeditly send itself to anyone in your contacts,<br>
-                using the same phrase and file from earlier. It would also download a trojan in order to steal passwords,<br>
-                though this would often go unnoticed.
-                <br><br>
-                Any file with the extensions jpg, jpeg, js, jse, css, wsh, sct, or hta would be overwritten with the worm, meaning<br>
-                the original file is gone. This is where the main destructive power of the worm came from.<br>
-                Due to the fact that malware was relatively new, no laws were put in place against releasing malware.<br>
-                Because of this, Onel de Guzman was released with no charges. 
-            </p>
-        </div>
-    </section>
-    <section>
-        <div id="sources">
-            <p>Sources:</p>
-            <ul>
-                <li><a class="link" href="https://en.wikipedia.org/wiki/ILOVEYOU">ILOVEYOU</a></li>
-                <li><a class="link" href="https://en.wikipedia.org/wiki/Computer_worm">Worms</a></li>
-            </ul>
-            
-        </div>
-    </section>
-    <section>
-        <div id="footer">
-            <p>
-                CST336 Internet Programming. 2026 Barrett
-            </p>
-            <img src="img/csumb.png" alt="schoolLogo">
-        </div>
-    </section>
+    <div id="top">
+        <p class = "topText">ILOVEYOU</p>
+        <p class = "topText">Type: Worm</p>
+    </div>
+    <div id="navigation">
+        <div><a class="nonSelectedButton" href="index.html">Home</a></div>
+        <div><a id="selectedButton" href="iloveyou.html">ILOVEYOU</a></div>   
+        <div><a class="nonSelectedButton" href="wannacry.html">WannaCry</a></div>
+        <div><a class="nonSelectedButton" href="resonate.html">Resonate</a></div>
+    </div>
+    <div id="body">
+        <p>
+            Written by Onel de Guzman, the ILOVEYOU computer worm was estimated to have infected 50 million computers.<br>
+            The worm was written to steal passwords, and the author never intended it to spread as far as it did.<br>
+            <br>
+            A worm is unique as it does not require a host program to infect. Most viruses infect host programs which will<br>
+            inadvertently run the viruses, but worms run by themselves. This causes them to be hard to catch and easy to spread,<br>
+            usually abusing vulnerabilites in the security of certian applications, like Emails.<br>
+            <br>ILOVEYOU abused a certian oversight in emails. A victim would recive an email from someone they knew (likely<br>
+            a friend or collegue) with the phrase "kindly check the attached LOVELETTER  coming from me."<br>
+        </p>
+        <img src="img/ILOVEYOU.png" alt="ILOVEYOU">
+        <cite><a class="source" href="https://www.youtube.com/watch?v=ZqkFfF5kAvw">Source</a></cite>
+        <p>
+            By default, many email programs hid the filetype of attached files. In the screenshot, you can see that the attached<br>
+            file pretends to be a text file, but if you enable file types, you'll see it's actually a VBS script.<br>
+            When the file was downloaded, the worm would immeditly send itself to anyone in your contacts,<br>
+            using the same phrase and file from earlier. It would also download a trojan in order to steal passwords,<br>
+            though this would often go unnoticed.
+            <br><br>
+            Any file with the extensions jpg, jpeg, js, jse, css, wsh, sct, or hta would be overwritten with the worm, meaning<br>
+            the original file is gone. This is where the main destructive power of the worm came from.<br>
+            Due to the fact that malware was relatively new, no laws were put in place against releasing malware.<br>
+            Because of this, Onel de Guzman was released with no charges. 
+        </p>
+    </div>
+    <div id="sources">
+        <p>Sources:</p>
+        <ul>
+            <li><a class="link" href="https://en.wikipedia.org/wiki/ILOVEYOU">ILOVEYOU</a></li>
+            <li><a class="link" href="https://en.wikipedia.org/wiki/Computer_worm">Worms</a></li>
+        </ul>
+        
+    </div>
+    <div id="footer">
+        <p>
+            CST336 Internet Programming. 2026 Barrett
+        </p>
+        <img src="img/csumb.png" alt="schoolLogo">
+    </div>
 </body>
 </html>
 
