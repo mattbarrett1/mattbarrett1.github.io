@@ -5,6 +5,7 @@ let guessCounter = 0;
 let answer;
 let winCount = 0;
 let lossCount = 0;
+let canAnswer = true;
 
 let guessInput = document.querySelector("#guessInput");
 let guessButton = document.querySelector("#guessButton");
@@ -22,11 +23,15 @@ resetButton.addEventListener("click", reset);
 
 
 function buttonClick() {
+    console.log("Correct answer: " + correctAnswer);
     answer = Number(guessInput.value);
     console.log(typeof answer);
     console.log(answer);
     console.log(correctAnswer);
     if (guessCounter == 7) {
+        return;
+    }
+    if (canAnswer == false) {
         return;
     }
     if (answer == null || answer == "") {
@@ -51,7 +56,7 @@ function buttonClick() {
         gameOver();
     }
     
-    if (guessCounter == 7) {
+    if (guessCounter == 7 && answer != correctAnswer) {
         guessResult = "No guesses left!";
         guessOutput.style.color = "red";
         lossCount++;
@@ -63,6 +68,7 @@ function buttonClick() {
 }
 
 function gameOver() {
+    canAnswer = false;
     finishText.textContent = "The correct answer was: " + answer;
     wins.textContent = "Wins: " + winCount;
     losses.textContent = "Losses: " + lossCount;
@@ -70,6 +76,7 @@ function gameOver() {
 }
 
 function reset() {
+    canAnswer = true;
     finishText.textContent = "";
     wins.textContent = "";
     losses.textContent = "";
@@ -79,4 +86,5 @@ function reset() {
     guessCounter = 0;
     resetButton.style.display = 'none';
     guessOutput.textContent = "";
+    guessOutput.style.color = "black";
 }
